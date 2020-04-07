@@ -1,0 +1,11 @@
+/Users/williamphipps/Desktop/CodingDojo/CSharp/OOP/Humanoid/obj/Debug/netcoreapp2.2/Humanoid.csprojAssemblyReference.cache
+/Users/williamphipps/Desktop/CodingDojo/CSharp/OOP/Humanoid/obj/Debug/netcoreapp2.2/Humanoid.csproj.CoreCompileInputs.cache
+/Users/williamphipps/Desktop/CodingDojo/CSharp/OOP/Humanoid/obj/Debug/netcoreapp2.2/Humanoid.AssemblyInfoInputs.cache
+/Users/williamphipps/Desktop/CodingDojo/CSharp/OOP/Humanoid/obj/Debug/netcoreapp2.2/Humanoid.AssemblyInfo.cs
+/Users/williamphipps/Desktop/CodingDojo/CSharp/OOP/Humanoid/bin/Debug/netcoreapp2.2/Humanoid.deps.json
+/Users/williamphipps/Desktop/CodingDojo/CSharp/OOP/Humanoid/bin/Debug/netcoreapp2.2/Humanoid.runtimeconfig.json
+/Users/williamphipps/Desktop/CodingDojo/CSharp/OOP/Humanoid/bin/Debug/netcoreapp2.2/Humanoid.runtimeconfig.dev.json
+/Users/williamphipps/Desktop/CodingDojo/CSharp/OOP/Humanoid/bin/Debug/netcoreapp2.2/Humanoid.dll
+/Users/williamphipps/Desktop/CodingDojo/CSharp/OOP/Humanoid/bin/Debug/netcoreapp2.2/Humanoid.pdb
+/Users/williamphipps/Desktop/CodingDojo/CSharp/OOP/Humanoid/obj/Debug/netcoreapp2.2/Humanoid.dll
+/Users/williamphipps/Desktop/CodingDojo/CSharp/OOP/Humanoid/obj/Debug/netcoreapp2.2/Humanoid.pdb
