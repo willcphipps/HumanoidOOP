@@ -10,60 +10,73 @@ namespace Humanoid.Models
         public int Dexterity;
         public int Strength;
         public int Speed;
-        private int health;
-        public int Health
-        {
-            get { return health; }
-        }
+        public int Intelligence;
+        protected int Health;
         public Human(string name)
         {
             Name = name;
-            Dexterity = 5;
-            Strength = 5;
-            Speed = 5;
-            health = 100;
+            Dexterity = 3;
+            Strength = 3;
+            Speed = 3;
+            Intelligence = 3;
+            Health = 100;
         }
-
-        public Human(string name, int dex, int str, int spd)
+        public Human(string name, int dex, int str, int intel, int spd)
         {
             Name = name;
             Dexterity = dex;
             Strength = str;
             Speed = spd;
-            health = 100;
+            Intelligence = intel;
+            Health = 100;
         }
-        public void ShowStats()
+        public void TakeDmg(int dmg)
+        {
+            Health -= dmg;
+        }
+        public void RestoreHealth(int hp)
+        {
+            Health += hp;
+        }
+        public void SamaraiDmg(int dmg)
+        {
+            if (Health <= dmg){
+                Health = 0;
+            }
+        }
+        public virtual void ShowStats()
         {
             Console.WriteLine($"Name: {Name}\nDexterity: {Dexterity}\nStrength: {Strength}\nSpeed: {Speed}\nHealth: {Health}");
         }
-        public int Attack(Human target)
+        
+        public virtual int Attack(Human target)
         {
             if(target is Human)
             {
-                int dmg = 5 * Strength;
-                target.health -= dmg;
+                int dmg = 3 * Strength;
+                target.Health -= dmg;
                 Console.WriteLine($"{Name} has attacked {target.Name} causing {dmg}hp of damage!");
-                return target.health;
+                return target.Health;
             }
             else
             {
                 throw new Exception("You should work on your aim...");
             }
         }
-        public int LightningStrike(Human target)
-            {
-            if(target is Human)
-            {
-                int dmg = 10 * Strength;
-                target.health -= dmg;
-                Console.WriteLine($"{Name} shot a bolt of lightening through the heart of {target.Name}");
-                return target.health;
-            }
-            else
-            {
-                throw new Exception("Was that a sparkle in your hand or lightning?");
-            }
-        }
+        // public int LightningStrike(Human target)
+        //     {
+        //     if(target is Human)
+        //     {
+        //         int dmg = 10 * Strength;
+        //         target.Health -= dmg;
+        //         Console.WriteLine($"{Name} shot a bolt of lightening through the heart of {target.Name}");
+        //         return target.Health;
+        //     }
+        //     else
+        //     {
+        //         throw new Exception("Was that a sparkle in your hand or lightning?");
+        //     }
+        // }
     }
 
 }
